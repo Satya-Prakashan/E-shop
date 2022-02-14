@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    tools:context=".Activity.AdminActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="12dp">
+
+        <ImageButton
+            android:id="@+id/ibBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/ic_arrow_back_24"
+            app:tint="@color/black"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            >
+
+            <TextView
+                android:id="@+id/tvAdminName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/white"
+                android:text="Hey there!"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEditDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="EDIT"
+                android:textColor="#00b33c"
+                android:textSize="13sp"
+                app:drawableEndCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvUserPhoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="+919503116588"
+                android:textAlignment="textEnd"
+                android:textColor="#b3b3b3"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:scrollbarSize="0dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tvRecentOrders"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:drawablePadding="20dp"
+                android:padding="18dp"
+                android:text="Recent Orders"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
+                app:drawableStartCompat="@drawable/ic_cart" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tvPayTm"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:drawablePadding="20dp"
+                android:padding="18dp"
+                android:text="PayTm"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
+                app:drawableStartCompat="@drawable/ic_paytm_icon" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tvSavedAddress"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:drawablePadding="20dp"
+                android:padding="18dp"
+                android:text="Saved Address"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
+                app:drawableStartCompat="@drawable/ic_location_svgrepo_com_2_" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tvSavedCards"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:drawablePadding="20dp"
+                android:padding="18dp"
+                android:text="Saved cards"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
+                app:drawableStartCompat="@drawable/ic_credit_cards" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tvReferAPartner"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:drawablePadding="20dp"
+                android:padding="18dp"
+                android:text="Refer a partner"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
+                app:drawableStartCompat="@drawable/ic_helmet_partner" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tvNotificationSettings"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:drawablePadding="20dp"
+                android:padding="18dp"
+                android:text="Notification settings"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
+                app:drawableStartCompat="@drawable/ic_notification" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tvSupport"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:drawablePadding="20dp"
+                android:padding="18dp"
+                android:text="Support"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
+                app:drawableStartCompat="@drawable/ic_help_svgrepo_com" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tvInfo"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:drawablePadding="20dp"
+                android:padding="18dp"
+                android:text="About"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
+                app:drawableStartCompat="@drawable/ic_info" />
+
+            <TextView
+                android:id="@+id/tvVersionNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Version 3.35.0.1"
+                android:textColor="@color/visible_grey" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
