@@ -89,7 +89,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/white"
             android:orientation="vertical">
 
@@ -101,7 +101,7 @@
                 android:background="@color/white"
                 android:drawablePadding="20dp"
                 android:padding="18dp"
-                android:text="Recent Orders"
+                android:text="@string/recent_orders"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
@@ -115,7 +115,7 @@
                 android:background="@color/white"
                 android:drawablePadding="20dp"
                 android:padding="18dp"
-                android:text="PayTm"
+                android:text="@string/paytm"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
@@ -129,7 +129,7 @@
                 android:background="@color/white"
                 android:drawablePadding="20dp"
                 android:padding="18dp"
-                android:text="Saved Address"
+                android:text="@string/saved_address"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
@@ -143,9 +143,9 @@
                 android:background="@color/white"
                 android:drawablePadding="20dp"
                 android:padding="18dp"
-                android:text="Saved cards"
+                android:text="@string/saved_cards"
                 android:textColor="@color/black"
-                android:textSize="15dp"
+                android:textSize="15sp"
                 app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
                 app:drawableStartCompat="@drawable/ic_credit_cards" />
 
@@ -157,7 +157,7 @@
                 android:background="@color/white"
                 android:drawablePadding="20dp"
                 android:padding="18dp"
-                android:text="Refer a partner"
+                android:text="@string/refer_a_partner"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
@@ -171,7 +171,7 @@
                 android:background="@color/white"
                 android:drawablePadding="20dp"
                 android:padding="18dp"
-                android:text="Notification settings"
+                android:text="@string/notification_settings"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
@@ -185,7 +185,7 @@
                 android:background="@color/white"
                 android:drawablePadding="20dp"
                 android:padding="18dp"
-                android:text="Support"
+                android:text="@string/support"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
@@ -199,18 +199,31 @@
                 android:background="@color/white"
                 android:drawablePadding="20dp"
                 android:padding="18dp"
-                android:text="About"
+                android:text="@string/about"
                 android:textColor="@color/black"
                 android:textSize="15sp"
                 app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
                 app:drawableStartCompat="@drawable/ic_info" />
 
             <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/white"
+                android:drawablePadding="20dp"
+                android:padding="18dp"
+                android:text="@string/log_out"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:drawableEndCompat="@drawable/ic_chevron_right_arrow"
+                app:drawableStartCompat="@drawable/ic_baseline_radio_order24" />
+            <TextView
                 android:id="@+id/tvVersionNumber"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="15dp"
-                android:text="Version 3.35.0.1"
+                android:text="@string/version_3_35_0_1"
                 android:textColor="@color/visible_grey" />
         </LinearLayout>
     </ScrollView>

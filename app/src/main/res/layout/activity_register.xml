@@ -105,12 +105,12 @@
             android:inputType="phone"/>
 
         <EditText
-            android:id="@+id/etState"
+            android:id="@+id/etAddress"
             android:textColor="#fff"
             android:textColorHint="#eee"
             android:paddingStart="10dp"
             android:paddingLeft="10dp"
-            android:hint="State"
+            android:hint="@string/enter_delivery_address_here"
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
@@ -118,12 +118,12 @@
             android:textSize="17sp" />
 
         <EditText
-            android:id="@+id/etCity"
+            android:id="@+id/etPin"
             android:textColor="#fff"
             android:textColorHint="#eee"
             android:paddingStart="10dp"
             android:paddingLeft="10dp"
-            android:hint="City"
+            android:hint="@string/pin_code"
             android:layout_margin="20dp"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"

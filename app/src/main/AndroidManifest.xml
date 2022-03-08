@@ -4,11 +4,26 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_new"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_new"
         android:supportsRtl="true"
         android:theme="@style/Theme.Eshop">
+        <activity
+            android:name=".Activity.DetailProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EmptyCartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ProductActivity"
+            android:exported="false" />
         <activity
             android:name=".Activity.AdminActivity"
             android:exported="false" />

@@ -5,8 +5,8 @@ import android.database.sqlite.SQLiteDatabase
 
 data class Register(
     var fname:String, var lname:String, var email:String,
-    var password:String, var phoneno: String, var state:String,
-    var city:String) {
+    var password:String, var phoneno: String, var address:String,
+    var pincode:String) {
 }
 
 
@@ -22,8 +22,8 @@ object DBregister {
         val email="email"
         val password = "password"
         val phoneno="phoneno"
-        val state = "state"
-        val city = "city"
+        val address = "address"
+        val pincode = "pincode"
 
     }
 
@@ -35,8 +35,8 @@ object DBregister {
         ${Columns.email} TEXT,
         ${Columns.password} TEXT,
         ${Columns.phoneno} TEXT,
-        ${Columns.state} TEXT,
-        ${Columns.city} TEXT
+        ${Columns.address} TEXT,
+        ${Columns.pincode} TEXT
         );
     """.trimIndent()
 
@@ -48,8 +48,8 @@ object DBregister {
         row.put(Columns.email, reg.email)
         row.put(Columns.password, reg.password)
         row.put(Columns.phoneno, reg.phoneno)
-        row.put(Columns.state,reg.state)
-        row.put(Columns.city,reg.city)
+        row.put(Columns.address,reg.address)
+        row.put(Columns.pincode,reg.pincode)
 
         db.insert(Table_Name, null, row)
     }
@@ -63,7 +63,7 @@ object DBregister {
             Table_Name, arrayOf(
                 Columns.admin_fname, Columns.admin_lname,
                 Columns.email, Columns.password, Columns.phoneno,
-                Columns.state,Columns.city
+                Columns.address,Columns.pincode
             ), null, null, null, null, null
         )
 

@@ -4,4 +4,29 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="repsentationonly">The product image(s) shown are for representation purpose only. The actual product may vary. It is recommended to read the product labels (if any), batch details, directions for use, etc., as contained in the actual product before consuming and/or utilizing the product. The product is meant for fresh and immediate consumption, or as specified by the seller of the product. For other information, please contact the merchant directly. android:textAlignment=</string>
+    <string name="search_for_your_location">Search for your location</string>
+    <string name="or">OR</string>
+    <string name="use_current_location">Use current location</string>
+    <string name="recent_searches">Recent searches</string>
+    <string name="roorkee">Roorkee</string>
+    <string name="uttrakhand_india">Uttrakhand, India</string>
+    <string name="saved_addresses">Saved addresses</string>
+    <string name="home">Home</string>
+    <string name="confirm_location">Confirm Location</string>
+    <string name="enter_delivery_address_here">Enter delivery address here</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="uttrakhand_roorkee_new_road_g2">Uttrakhand roorkee new road G2</string>
+    <string name="log_out">Log Out</string>
+    <string name="version_3_35_0_1">Version 3.35.0.1</string>
+    <string name="about">About</string>
+    <string name="support">Support</string>
+    <string name="notification_settings">Notification settings</string>
+    <string name="refer_a_partner">Refer a partner</string>
+    <string name="saved_cards">Saved cards</string>
+    <string name="saved_address">Saved Address</string>
+    <string name="paytm">PayTm</string>
+    <string name="recent_orders">Recent Orders</string>
+    <string name="item_name">Item Name</string>
+    <string name="purchase_now">Purchase Now</string>
 </resources>

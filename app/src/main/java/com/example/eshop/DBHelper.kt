@@ -3,6 +3,7 @@ package com.example.eshop
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
+import com.example.eshop.Models.DBOrders
 import com.example.eshop.Models.DBregister
 
 class DBHelper(context:Context):SQLiteOpenHelper(
@@ -12,6 +13,7 @@ class DBHelper(context:Context):SQLiteOpenHelper(
 ){
     override fun onCreate(db: SQLiteDatabase?) {
         db?.execSQL(DBregister.Create_Table)
+        db?.execSQL(DBOrders.Create_Table)
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, p1: Int, p2: Int) {

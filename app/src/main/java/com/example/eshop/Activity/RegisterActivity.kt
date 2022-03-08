@@ -22,7 +22,7 @@ class RegisterActivity : AppCompatActivity() {
 
         registerBtn.setOnClickListener {
             val newRecord=Register(etFname.text.toString(),etLname.text.toString(),etEmail.text.toString(),
-                etPass.text.toString(),etPhoneno.text.toString(),etState.text.toString(),etCity.text.toString())
+                etPass.text.toString(),etPhoneno.text.toString(),etAddress.text.toString(),etPin.text.toString())
 
             db?.execSQL(DBregister.insert(db,newRecord).toString())
 
